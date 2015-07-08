@@ -11,6 +11,7 @@ public class EmployeeTest {
 	Engineer en2 = new Engineer();
 	en2.setYearlySalary(100000);
 
+	// Engineers make at least 225000 guaranteed
 	assertTrue(en1.getYearlySalary() == 225000);
 	assertTrue(en2.getYearlySalary() == 225000);
     }
@@ -23,6 +24,7 @@ public class EmployeeTest {
 	Manager ma2 = new Manager();
 	ma2.setYearlySalary(250000);
 
+	// Managers make at leas 500000 guaranteed
 	assertTrue(ma1.getYearlySalary() == 500000);
 	assertTrue(ma2.getYearlySalary() == 500000);
     }
@@ -35,6 +37,8 @@ public class EmployeeTest {
 	Engineer en2 = new Engineer();
 	en2.setYearlySalary(400000);
 
+	// Engineers get 20% more than the valid salary
+	// they agreed upon
 	assertTrue(en1.getYearlySalary() > 250000);
 	assertTrue(en2.getYearlySalary() > 400000);
     }
@@ -47,6 +51,8 @@ public class EmployeeTest {
 	Manager ma2 = new Manager();
 	ma2.setAge(58);
 
+	// No matter how old they are
+	// Manager look old and should be at least 50
 	assertTrue(ma1.getAge() == 50);
 	assertTrue(ma2.getAge() == 58);
     }
