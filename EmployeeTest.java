@@ -56,4 +56,17 @@ public class EmployeeTest {
 	assertTrue(ma1.getAge() == 50);
 	assertTrue(ma2.getAge() == 58);
     }
+
+    @Test
+    public void engineerAreSameAge() {
+	Engineer en1 = new Engineer();
+	en1.setAge(20);
+
+	Engineer en2 = new Engineer();
+	en2.setAge(30);
+
+	// Engineers stay forever young
+	assertTrue(en1.getAge() == 20);
+	assertTrue(en2.getAge() == 30);
+    }
 }
