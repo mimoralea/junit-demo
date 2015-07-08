@@ -1,5 +1,6 @@
 public class Manager extends Employee {
 
+    // managers should get the most money
     public double getYearlySalary() {
 	if (this.yearlySalary < 300000)
 	    return 500000;
@@ -10,6 +11,7 @@ public class Manager extends Employee {
 	this.yearlySalary = yearlySalary;
     }
 
+    // manager should always look older
     public int getAge() {
 	if (super.getAge() < 50)
 	    return 50;
